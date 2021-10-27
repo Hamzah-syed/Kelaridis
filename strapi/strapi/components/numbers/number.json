@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_numbers_numbers",
+  "info": {
+    "name": "Number",
+    "icon": "caret-up"
+  },
+  "options": {},
+  "attributes": {
+    "number": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

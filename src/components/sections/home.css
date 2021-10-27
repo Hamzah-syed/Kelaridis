@@ -1,0 +1,251 @@
+/****** Hero Styling *******/
+.heroWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.heroContentWrapper {
+  width: 50%;
+  background-color: #fafbfa;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+.heroContent {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 15px;
+}
+.overlay {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 40px;
+  bottom: 0;
+  z-index: 9;
+  display: none;
+}
+
+.heroContent h2 {
+  font-size: 20px;
+  line-height: 30.06px;
+  font-weight: 400;
+}
+.heroContent h1 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40.06px;
+}
+
+.heroImage {
+  width: 50%;
+  position: relative;
+}
+.heroSquare1 {
+  position: absolute;
+  background-color: #cceff0;
+  z-index: 10;
+  bottom: 0px;
+  overflow-x: visible !important;
+  width: 80px;
+  height: 80px;
+  right: 50px;
+}
+.heroSquare2 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #eefafa;
+  z-index: 10;
+  bottom: -40px;
+  right: 10px;
+  overflow-x: visible !important;
+}
+/****** Hero Styling End *******/
+
+/****** Numbers Section Styling *******/
+.numberSecWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.numbersCard {
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.numbersCard h1 {
+  font-weight: 900;
+  font-size: 58px;
+  line-height: 50px;
+  color: #081313;
+}
+.numbersCard p {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #666666;
+}
+.numbersSecSquare1 {
+  position: absolute;
+  width: 59px;
+  height: 59px;
+  background: #eefafa;
+  z-index: 10;
+  bottom: 0;
+  right: 100px;
+}
+.numbersSecSquare2 {
+  position: absolute;
+  width: 59px;
+  height: 59px;
+  background: #eefafa;
+  z-index: 10;
+  top: 80px;
+  left: 60px;
+  display: block;
+}
+/****** Numbers Section Styling End *******/
+
+/************** Media Queries **************/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* Hero Styling for mobile devices */
+  .heroContent h2 {
+    font-size: 42px;
+    line-height: 55.06px;
+  }
+  .heroContent h1 {
+    font-size: 55px;
+    line-height: 77.41px;
+  }
+  .heroWrapper {
+    flex-direction: column-reverse;
+  }
+  .heroContentWrapper {
+    width: 100%;
+    padding: 40px 0px;
+  }
+  .heroImage {
+    width: 100%;
+  }
+  /* Numbers section styling for tablets and above */
+  .numberSecWrapper {
+    flex-direction: column;
+  }
+  .numbersCard {
+    margin-bottom: 20px;
+  }
+}
+/* Extra small 2 devices (phones, 500px and down) */
+@media only screen and (max-width: 500px) {
+  .heroContent h2 {
+    font-size: 20px;
+    line-height: 30.06px;
+  }
+  .heroContent h1 {
+    font-size: 30px;
+    line-height: 40.06px;
+  }
+  /* Numbers section styling for tablets and above */
+  .numberSecWrapper {
+    flex-direction: column;
+  }
+  .numbersCard {
+    margin-bottom: 40px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .heroContent h2 {
+    font-size: 20px;
+    line-height: 30.06px;
+  }
+  .heroContent h1 {
+    font-size: 30px;
+    line-height: 40.06px;
+  }
+  /* overlay Squares tablet styling  */
+  .heroSquare1 {
+    width: 100px;
+    height: 100px;
+    left: -50px;
+  }
+  .heroSquare2 {
+    width: 59px;
+    height: 59px;
+    left: 50px;
+    bottom: -59px;
+  }
+
+  /* Numbers section styling for tablets and above */
+  .numbersSecSquare1 {
+    left: 20px;
+  }
+  .numbersSecSquare2 {
+    display: none;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .heroContent h2 {
+    font-size: 30px;
+    line-height: 40.06px;
+  }
+  .heroContent h1 {
+    font-size: 40px;
+    line-height: 55.06px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .heroContent h2 {
+    font-size: 38px;
+    line-height: 50.06px;
+  }
+  .heroContent h1 {
+    font-size: 55px;
+    line-height: 65.41px;
+  }
+  /* display white overlay */
+  .overlay {
+    display: block;
+    height: 10px;
+  }
+  /* overlay Squares desktop styling  */
+  .heroSquare1 {
+    width: 138px;
+    height: 138px;
+    left: -69px;
+  }
+  .heroSquare2 {
+    left: 69px;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .heroContent h2 {
+    font-size: 48px;
+    line-height: 55.06px;
+  }
+  .heroContent h1 {
+    font-size: 64px;
+    line-height: 77.41px;
+  }
+  .overlay {
+    display: block;
+    height: 40px;
+  }
+}
